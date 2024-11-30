@@ -162,8 +162,8 @@ function App() {
                   <img src={getEmotionImgById(2)}/>
                 </div>
                 {/* path 설정 */}
-                <Routes>
-                  <Route path="/EmotionalDiary" element= {<Home/>} />
+                <Routes basename="/EmotionalDiary">
+                  <Route path="/" element= {<Home/>} />
                   <Route path="/new/" element= {<New/>} />
                   {/* 동적 경로 설정 */}
                   {/* :id 하면 해당 자리에 다른 값이 입력되면 해당 페이지에서 읽음 */}
